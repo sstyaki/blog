@@ -1,0 +1,50 @@
+<script setup lang="ts">
+import Sidebar from "../components/Sidebar.vue";
+</script>
+
+<template>
+  <div class="default-layout">
+    <div class="header">気分屋茶飯事 ー <slot name="header"/></div>
+    <div class="main">
+      <Sidebar />
+      <div class="main-content">
+        <slot />
+      </div>
+    </div>
+  </div>
+</template>
+
+<style scoped>
+.default-layout {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 2em;
+  padding-left: 35px;
+  min-height: 95px;
+  background-image: url("../assets/defaultlayout-headerline.png");
+  background-size: cover;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+}
+
+.main-content {
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  margin: 20px;
+  padding: 40px;
+}
+</style>
