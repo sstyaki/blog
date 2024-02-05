@@ -1,0 +1,23 @@
+// vite.config.ts
+import { defineConfig } from "file:///mnt/c/Users/akira/blog/code/node_modules/vite/dist/node/index.js";
+import vue from "file:///mnt/c/Users/akira/blog/code/node_modules/@vitejs/plugin-vue/dist/index.mjs";
+import { webfontDownload } from "file:///mnt/c/Users/akira/blog/code/node_modules/vite-plugin-webfont-dl/dist/index.mjs";
+var vite_config_default = defineConfig({
+  plugins: [
+    vue(),
+    webfontDownload([
+      "https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap"
+    ])
+  ],
+  server: {
+    // WSL2でファイル編集した際に監視されない問題があるため、usePolling:trueにすることで監視を強制させる
+    // https://vitejs.dev/config/server-options.html#server-watch
+    watch: {
+      usePolling: true
+    }
+  }
+});
+export {
+  vite_config_default as default
+};
+//# sourceMappingURL=data:application/json;base64,ewogICJ2ZXJzaW9uIjogMywKICAic291cmNlcyI6IFsidml0ZS5jb25maWcudHMiXSwKICAic291cmNlc0NvbnRlbnQiOiBbImNvbnN0IF9fdml0ZV9pbmplY3RlZF9vcmlnaW5hbF9kaXJuYW1lID0gXCIvbW50L2MvVXNlcnMvYWtpcmEvYmxvZy9jb2RlXCI7Y29uc3QgX192aXRlX2luamVjdGVkX29yaWdpbmFsX2ZpbGVuYW1lID0gXCIvbW50L2MvVXNlcnMvYWtpcmEvYmxvZy9jb2RlL3ZpdGUuY29uZmlnLnRzXCI7Y29uc3QgX192aXRlX2luamVjdGVkX29yaWdpbmFsX2ltcG9ydF9tZXRhX3VybCA9IFwiZmlsZTovLy9tbnQvYy9Vc2Vycy9ha2lyYS9ibG9nL2NvZGUvdml0ZS5jb25maWcudHNcIjtpbXBvcnQgeyBkZWZpbmVDb25maWcgfSBmcm9tICd2aXRlJ1xuaW1wb3J0IHZ1ZSBmcm9tICdAdml0ZWpzL3BsdWdpbi12dWUnXG5pbXBvcnQgeyB3ZWJmb250RG93bmxvYWQgfSBmcm9tICd2aXRlLXBsdWdpbi13ZWJmb250LWRsJztcblxuLy8gaHR0cHM6Ly92aXRlanMuZGV2L2NvbmZpZy9cbmV4cG9ydCBkZWZhdWx0IGRlZmluZUNvbmZpZyh7XG4gIHBsdWdpbnM6IFtcbiAgICB2dWUoKSxcbiAgICB3ZWJmb250RG93bmxvYWQoW1xuICAgICAgJ2h0dHBzOi8vZm9udHMuZ29vZ2xlYXBpcy5jb20vY3NzMj9mYW1pbHk9WmVuK0t1cmVuYWlkbyZkaXNwbGF5PXN3YXAnXG4gICAgXSksXG4gIF0sXG4gIHNlcnZlcjoge1xuICAgIC8vIFdTTDJcdTMwNjdcdTMwRDVcdTMwQTFcdTMwQTRcdTMwRUJcdTdERThcdTk2QzZcdTMwNTdcdTMwNUZcdTk2OUJcdTMwNkJcdTc2RTNcdTg5OTZcdTMwNTVcdTMwOENcdTMwNkFcdTMwNDRcdTU1NEZcdTk4NENcdTMwNENcdTMwNDJcdTMwOEJcdTMwNUZcdTMwODFcdTMwMDF1c2VQb2xsaW5nOnRydWVcdTMwNkJcdTMwNTlcdTMwOEJcdTMwNTNcdTMwNjhcdTMwNjdcdTc2RTNcdTg5OTZcdTMwOTJcdTVGMzdcdTUyMzZcdTMwNTVcdTMwNUJcdTMwOEJcbiAgICAvLyBodHRwczovL3ZpdGVqcy5kZXYvY29uZmlnL3NlcnZlci1vcHRpb25zLmh0bWwjc2VydmVyLXdhdGNoXG4gICAgd2F0Y2g6IHtcbiAgICAgIHVzZVBvbGxpbmc6IHRydWVcbiAgICB9XG4gIH1cbn0pXG4iXSwKICAibWFwcGluZ3MiOiAiO0FBQXNRLFNBQVMsb0JBQW9CO0FBQ25TLE9BQU8sU0FBUztBQUNoQixTQUFTLHVCQUF1QjtBQUdoQyxJQUFPLHNCQUFRLGFBQWE7QUFBQSxFQUMxQixTQUFTO0FBQUEsSUFDUCxJQUFJO0FBQUEsSUFDSixnQkFBZ0I7QUFBQSxNQUNkO0FBQUEsSUFDRixDQUFDO0FBQUEsRUFDSDtBQUFBLEVBQ0EsUUFBUTtBQUFBO0FBQUE7QUFBQSxJQUdOLE9BQU87QUFBQSxNQUNMLFlBQVk7QUFBQSxJQUNkO0FBQUEsRUFDRjtBQUNGLENBQUM7IiwKICAibmFtZXMiOiBbXQp9Cg==

@@ -45,6 +45,6 @@ import Sidebar from "../components/Sidebar.vue";
   flex-direction: column;
   flex-grow: 1;
   margin: 20px;
-  padding: 40px;
+  padding: 0 40px 40px;
 }
 </style>

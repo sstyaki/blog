@@ -5,11 +5,9 @@
 <template>
   <div class="home">
     <div class="menu-header">気分屋茶飯事</div>
-    <div><router-link to="/sub" class="menu-items">御品書</router-link></div>
+    <div><router-link to="/guide" class="menu-items">案内板</router-link></div>
     <div><router-link to="/sub" class="menu-items">茶飯事</router-link></div>
     <div><router-link to="/sub" class="menu-items">瓦落多</router-link></div>
-    <div><router-link to="/sub" class="menu-items">絵空事</router-link></div>
-    <div><router-link to="/sub" class="menu-items">げえむ</router-link></div>
   </div>
 </template>
 
