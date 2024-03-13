@@ -1,12 +1,37 @@
 <script setup lang="ts">
 import Sidebar from "../components/Sidebar.vue";
+import {LayoutType} from "../constants/layoutType.ts";
+import {onMounted, ref} from "vue";
+
+const isMobileView = ref(true);
+const windowWidth = ref(0);
+const calculateWindowWidth = () => {
+  windowWidth.value = window.innerWidth;
+  return isMobileView.value = windowWidth.value < mobileSizeMax;
+};
+calculateWindowWidth();
+
+const mobileSizeMax = 850;
+
+onMounted(() => {
+  window.addEventListener('resize', calculateWindowWidth);
+});
 </script>
 
 <template>
   <div class="default-layout">
-    <div class="header">気分屋茶飯事 ー <slot name="header"/></div>
+    <div v-if="isMobileView" class="header-mobile">
+      <slot name="header"/>
+      <div class="header-menu-mobile">
+        <div><router-link to="/">表紙</router-link></div>
+        <div><router-link to="/guide">案内板</router-link></div>
+        <div><router-link to="/weblogs">茶飯事</router-link></div>
+        <div><router-link to="/contents">瓦落多</router-link></div>
+      </div>
+    </div>
+    <div v-else class="header">気分屋茶飯事 ー <slot name="header"/></div>
     <div class="main">
-      <Sidebar />
+      <Sidebar v-if="!isMobileView" :type="LayoutType.Default"/>
       <div class="main-content">
         <slot />
       </div>
@@ -22,6 +47,26 @@ import Sidebar from "../components/Sidebar.vue";
   flex-direction: column;
 }
 
+.header-mobile {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.5em;
+  padding-left: 35px;
+  min-height: 95px;
+  background-image: url("../assets/layout-headerline.png");
+  background-size: cover;
+}
+
+.header-menu-mobile {
+  display: flex;
+  flex-direction: row;
+  font-size: 0.75em;
+  gap: 15px;
+  padding-right: 20px;
+}
+
 .header {
   display: flex;
   flex-direction: column;
@@ -29,7 +74,7 @@ import Sidebar from "../components/Sidebar.vue";
   font-size: 2em;
   padding-left: 35px;
   min-height: 95px;
-  background-image: url("../assets/defaultlayout-headerline.png");
+  background-image: url("../assets/layout-headerline.png");
   background-size: cover;
 }
 
@@ -37,6 +82,7 @@ import Sidebar from "../components/Sidebar.vue";
   display: flex;
   flex-direction: row;
   flex-grow: 1;
+  overflow: hidden;
 }
 
 .main-content {
@@ -45,6 +91,6 @@ import Sidebar from "../components/Sidebar.vue";
   flex-direction: column;
   flex-grow: 1;
   margin: 20px;
-  padding: 0 40px 40px;
+  overflow-y: auto;
 }
 </style>
