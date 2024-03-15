@@ -3,7 +3,7 @@ import {createRouter, createWebHistory} from "vue-router";
 import Guide from "./pages/Guide.vue";
 
 import Weblogs from "./pages/Weblogs.vue";
-import Weblog20240314 from "./modules/weblogs/pages/Weblog20240314.vue";
+import Weblog20240316 from "./modules/weblogs/pages/Weblog20240316.vue";
 
 import Contents from "./pages/Contents.vue";
 import Practice202401 from "./modules/contents/pages/Practice202401.vue";
@@ -18,7 +18,7 @@ const routes = [
   { path: '/guide', name: 'Guide', component: Guide },
 
   { path: '/weblogs', name: 'Weblogs', component: Weblogs },
-  { path: '/weblogs/2024-3-14', name: 'Weblog20240314', component: Weblog20240314 },
+  { path: '/weblogs/2024-3-16', name: 'Weblog20240316', component: Weblog20240316 },
 
   { path: '/contents', name: 'Contents', component: Contents },
   { path: '/contents/practice/2024-1', name: 'Practice202401', component: Practice202401 },

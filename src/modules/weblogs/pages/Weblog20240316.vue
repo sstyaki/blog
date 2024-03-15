@@ -7,8 +7,8 @@ import DefaultLayout from "../../../layouts/DefaultLayout.vue";
   <DefaultLayout>
     <template v-slot:header>茶飯事</template>
     <WeblogPage
-        title="気分屋茶飯事開設日"
-        year-month-day="2024/03/13"
+        title="開設日"
+        year-month-day="2024/03/16"
     >
       <div>はじめまして。</div>
       <div>自分の絵をまとめて見れる場所が欲しいなと思い、個人サイトを作ることにしました。</div>

@@ -11,7 +11,7 @@ import DefaultLayout from "../layouts/DefaultLayout.vue";
     <h2>貴方は・・・？</h2>
     <div class="about-me">
       <img src="../assets/okojo.png" alt="オコジョの絵" class="icon-image"/>
-      <div><a href="https://twitter.com/_styaki">　＞ ついったー。</a></div>
+      <div><a href="https://twitter.com/_styaki">> ついった</a></div>
     </div>
     <div>ちゃきと申します。</div>
     <div>おこじょではないです。おこじょが好きです。</div>

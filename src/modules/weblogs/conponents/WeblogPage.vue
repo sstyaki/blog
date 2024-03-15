@@ -27,7 +27,7 @@ withDefaults(defineProps<Props>(), {});
   display: flex;
   flex-direction: column;
   gap: 20px;
-  padding: 0 40px 40px;
+  padding: 0 15px 15px;
 }
 
 .pagination-menu {
