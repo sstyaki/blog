@@ -1,5 +1,9 @@
 {
   "name": "code",
+  "log-date-format": "YYYY-MM-DD HH:mm:ss Z",
+  "env" : {
+    "NODE_ENV" : "production"
+  },
   "private": true,
   "version": "0.0.0",
   "type": "module",
