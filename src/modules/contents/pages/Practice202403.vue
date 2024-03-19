@@ -5,7 +5,7 @@ import {ImageInfo} from "../constants/imageInfo.ts";
 
 const imageInfos = [
   new ImageInfo({
-    title: "視線",
+    title: "街",
     filename: "tower.png",
     date: "19",
     descriptions: [
