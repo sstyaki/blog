@@ -6,6 +6,15 @@ import {ImageInfo} from "../constants/imageInfo.ts";
 const imageInfos = [
   new ImageInfo({
     title: "視線",
+    filename: "tower.png",
+    date: "19",
+    descriptions: [
+      "お題を設けず好きなものを書いてみた。",
+      "知らない世界の知らない街並みが好きだ。",
+    ],
+  }),
+  new ImageInfo({
+    title: "視線",
     filename: "eye1.png",
     date: "09",
     descriptions: [
