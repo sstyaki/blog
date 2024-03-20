@@ -5,11 +5,27 @@ import {ImageInfo} from "../constants/imageInfo.ts";
 
 const imageInfos = [
   new ImageInfo({
+    title: "森の声",
+    filename: "wolf.png",
+    date: "20",
+    descriptions: [
+      "私たちの遠吠えは、電子の海を渡ってきっと届く。",
+    ],
+  }),
+  new ImageInfo({
+    title: "月",
+    filename: "moon.png",
+    date: "19",
+    descriptions: [
+      "宇宙ってなんか、怖くないすか",
+    ],
+  }),
+  new ImageInfo({
     title: "街",
     filename: "tower.png",
     date: "19",
     descriptions: [
-      "お題を設けず好きなものを書いてみた。",
+      "お題を設けず好きなものを描いてみた。",
       "知らない世界の知らない街並みが好きだ。",
     ],
   }),
