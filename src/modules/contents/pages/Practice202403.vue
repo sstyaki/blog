@@ -5,6 +5,14 @@ import {ImageInfo} from "../constants/imageInfo.ts";
 
 const imageInfos = [
   new ImageInfo({
+    title: "格子と空",
+    filename: "stair.png",
+    date: "24",
+    descriptions: [
+      "また街の絵",
+    ],
+  }),
+  new ImageInfo({
     title: "森の声",
     filename: "wolf.png",
     date: "20",
