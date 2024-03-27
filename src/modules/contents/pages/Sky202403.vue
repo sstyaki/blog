@@ -12,6 +12,12 @@ const imageInfos = [
   }),
   new ImageInfo({
     title: "",
+    filename: "mayonaka.png",
+    date: "20",
+    descriptions: [],
+  }),
+  new ImageInfo({
+    title: "",
     filename: "styaki3.png",
     date: "16",
     descriptions: [],
