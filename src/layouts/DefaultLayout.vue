@@ -95,7 +95,6 @@ watch(
 }
 
 .main-content {
-  max-width: 900px;
   display: flex;
   flex-direction: column;
   flex-grow: 1;

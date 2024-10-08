@@ -53,6 +53,7 @@ const handleToggleOff = () => {
 <style scoped>
 .image {
   width: 100%;
+  max-width: 900px;
   margin-top: 10px;
   margin-bottom: 10px;
 }
