@@ -105,7 +105,8 @@ watch(
 
 ::-webkit-full-page-media, :future, :root default-layout {
   width: 100vw;
-  height: 95vh;
+  height: 100vh;
+  height: 100dvh;
   display: flex;
   flex-direction: column;
 }

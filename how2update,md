@@ -1,0 +1,29 @@
+# styaki.comの更新方法について
+### 1.作業を保存しremoteにpushする
+```
+git s
+git add .
+git ci -m "XX更新MM/DD"
+git push origin head
+```
+### 2.rloginを起動
+styakiでエントリーしたいがうまくいかないのでroot xserverのエントリーを使う(要修正)
+ubuntuのアップデートは自動化(5:00更新)してあるが念のため手動の方法をメモしておく
+```
+$ sudo apt update -y && sudo apt upgrade -y
+$ sudo apt autoremove
+```
+Pending kernel upgradeが表示されたとき
+1.Enterで進む
+2.Which services should be restarted? で再起動するサービスが表示される
+3.アップデート完了、再度`sudo apt update && sudo apt upgrade`して確認
+
+ここから通常フロー
+```
+# cd /home/
+# su styaki
+$ exec $SHELL -l
+$ cd styaki/blog/
+$ git pull
+$ pm2 restart styaki-blog
+```
