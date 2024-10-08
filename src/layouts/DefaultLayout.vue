@@ -1,8 +1,9 @@
 <script setup lang="ts">
 import Sidebar from "../components/Sidebar.vue";
 import {LayoutType} from "../constants/layoutType.ts";
-import {onMounted, ref} from "vue";
+import {onMounted, ref, watch} from "vue";
 
+const emit = defineEmits(["change-device-of-window"]);
 const isMobileView = ref(true);
 const windowWidth = ref(0);
 const calculateWindowWidth = () => {
@@ -14,8 +15,16 @@ calculateWindowWidth();
 const mobileSizeMax = 850;
 
 onMounted(() => {
-  window.addEventListener('resize', calculateWindowWidth);
+  window.addEventListener("resize", calculateWindowWidth);
 });
+
+watch(
+    isMobileView,
+    () => {
+      emit("change-device-of-window", isMobileView.value);
+    },
+    { immediate: true }
+);
 </script>
 
 <template>
@@ -92,5 +101,12 @@ onMounted(() => {
   flex-grow: 1;
   margin: 20px;
   overflow-y: auto;
+}
+
+::-webkit-full-page-media, :future, :root default-layout {
+  width: 100vw;
+  height: 95vh;
+  display: flex;
+  flex-direction: column;
 }
 </style>

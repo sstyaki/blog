@@ -5,6 +5,7 @@ import {ref} from "vue";
 
 interface Props {
   invalidDescriptionToggle?: boolean | undefined;
+  invalidDate?: boolean | undefined;
   imageInfos: ImageInfo[];
   yearMonth: string;
   nextPage?: string | undefined;
@@ -32,7 +33,10 @@ const handleToggleOff = () => {
   >… 説明 {{showDescription ? "ON" : "OFF"}}</Toggle>
 
   <div v-for="(imageInfo) in imageInfos" class="image-info">
-    <div>{{yearMonth}}/{{imageInfo.value.date}}</div>
+    <div v-if="!invalidDate">
+      <div v-if="imageInfo.value.month == null">{{yearMonth}}/{{imageInfo.value.date}}</div>
+      <div v-else>{{yearMonth.slice(0, 4)}}/{{imageInfo.value.month}}/{{imageInfo.value.date}}</div>
+    </div>
     <div class="image-name">{{ imageInfo.value.title }}</div>
     <img :src="dynamicImageURL(imageInfo.value.filename)" :alt="imageInfo.value.title + 'の画像'" class="image">
     <div v-if="showDescription" v-for="(description) in imageInfo.value.descriptions">{{description}}</div>

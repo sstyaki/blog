@@ -7,8 +7,8 @@ const value = ref(true);
 
 <template>
   <div class="toggle-body">
-    <img v-if="value" @click="emit('toggle-off'); value = false" class="toggle" src="../assets/toggle-on.png" alt="toggle-on">
-    <img v-else @click="emit('toggle-on'); value = true" class="toggle" src="../assets/toggle-off.png" alt="toggle-off">
+    <img v-if="value" @click="emit('toggle-off'); value = false;" class="toggle" src="../assets/toggle-on.png" alt="toggle-on">
+    <img v-else @click="emit('toggle-on'); value = true;" class="toggle" src="../assets/toggle-off.png" alt="toggle-off">
     <slot />
   </div>
 </template>

@@ -51,6 +51,7 @@ const imageInfos = [
       :image-infos="imageInfos"
       year-month="2024/03"
       prev-page="/contents/sky/2024-2"
+      next-page="/contents/sky/2024-4to10"
     />
   </DefaultLayout>
 </template>

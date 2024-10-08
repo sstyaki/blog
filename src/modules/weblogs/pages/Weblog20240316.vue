@@ -9,6 +9,7 @@ import DefaultLayout from "../../../layouts/DefaultLayout.vue";
     <WeblogPage
         title="開設日"
         year-month-day="2024/03/16"
+        next-page="/weblogs/2024-10-08"
     >
       <div>はじめまして。</div>
       <div>自分の絵をまとめて見れる場所が欲しいなと思い、個人サイトを作ることにしました。</div>

@@ -7,12 +7,26 @@ import DefaultLayout from "../layouts/DefaultLayout.vue";
   <DefaultLayout>
     <template v-slot:header>茶飯事</template>
     <h2>諸々</h2>
-    <div>2024/03/16 :</div>
-    <router-link to="/weblogs/2024-3-16" class="log-link">開設日</router-link>
+    <div class="weblogs">
+      <div class="weblog-item">
+        <div>2024/10/08 :</div>
+        <router-link to="/weblogs/2024-10-08" class="log-link">マイクラをしている</router-link>
+      </div>
+      <div class="weblog-item">
+        <div>2024/03/16 :</div>
+        <router-link to="/weblogs/2024-3-16" class="log-link">開設日</router-link>
+      </div>
+    </div>
   </DefaultLayout>
 </template>
 
 <style scoped>
+.weblogs {
+  display: flex;
+  flex-direction:column;
+  gap: 2em;
+}
+
 .log-link {
   font-size: 1.2em;
   padding-left: 15px;

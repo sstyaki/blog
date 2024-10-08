@@ -7,21 +7,24 @@ import DefaultLayout from "../layouts/DefaultLayout.vue";
   <DefaultLayout>
     <template v-slot:header>瓦落多</template>
     <h2>練習とか</h2>
-    <div>
-      <div class="contents">
-        <div>2024年</div>
-        <div><router-link to="/contents/practice/2024-3" class="log-link">　　　3月</router-link></div>
-        <div><router-link to="/contents/practice/2024-2" class="log-link">　　　2月</router-link></div>
-        <div><router-link to="/contents/practice/2024-1" class="log-link">　　　1月</router-link></div>
-      </div>
+    <div class="contents">
+      <div>2024年</div>
+      <div><router-link to="/contents/practice/2024-3" class="log-link">　　　3月</router-link></div>
+      <div><router-link to="/contents/practice/2024-2" class="log-link">　　　2月</router-link></div>
+      <div><router-link to="/contents/practice/2024-1" class="log-link">　　　1月</router-link></div>
     </div>
     <h2>skyの絵とか</h2>
-      <div class="contents">
-        <div>2024年</div>
-        <div><router-link to="/contents/sky/2024-3" class="log-link">　　　3月</router-link></div>
-        <div><router-link to="/contents/sky/2024-2" class="log-link">　　　2月</router-link></div>
-        <div><router-link to="/contents/sky/2024-1" class="log-link">　　　1月</router-link></div>
-      </div>
+    <div class="contents">
+      <div>2024年</div>
+      <div><router-link to="/contents/sky/2024-4to10" class="log-link">　　　4月~10月</router-link></div>
+      <div><router-link to="/contents/sky/2024-3" class="log-link">　　　3月</router-link></div>
+      <div><router-link to="/contents/sky/2024-2" class="log-link">　　　2月</router-link></div>
+      <div><router-link to="/contents/sky/2024-1" class="log-link">　　　1月</router-link></div>
+    </div>
+    <h2>minecraftの建築とか</h2>
+    <div class="contents">
+      <div><router-link to="/contents/minecraft" class="log-link">　　　全部</router-link></div>
+    </div>
   </DefaultLayout>
 </template>
 
