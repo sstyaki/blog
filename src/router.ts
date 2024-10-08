@@ -16,9 +16,6 @@ import Sky202403 from "./modules/contents/pages/Sky202403.vue";
 import Sky202404to10 from "./modules/contents/pages/Sky202404to10.vue";
 import Minecraft from "./modules/contents/pages/Minecraft.vue";
 
-import WebAuthStyaki from "./sslwebauth/styaki/q_o2rfCpQBv8g_pJHu7dqd50WtSweqV0pUZW526KDmo.vue";
-import WebAuthWWWStyaki from "./sslwebauth/www.styaki/McSs2LK80pLJkWUIa0v5ZYZTcXPTYQ9mdkm5Ta5BlhE.vue";
-
 const routes = [
   { path: '/', name: 'Home', component: Home },
   { path: '/guide', name: 'Guide', component: Guide },
@@ -36,9 +33,6 @@ const routes = [
   { path: '/contents/sky/2024-3', name: 'Sky202403', component: Sky202403 },
   { path: '/contents/sky/2024-4to10', name: 'Sky202404to10', component: Sky202404to10 },
   { path: '/contents/minecraft', name: 'minecraft', component: Minecraft },
-
-  { path: '/.well-known/acme-challenge/q_o2rfCpQBv8g_pJHu7dqd50WtSweqV0pUZW526KDmo', component: WebAuthStyaki },
-  { path: '/.well-known/acme-challenge/McSs2LK80pLJkWUIa0v5ZYZTcXPTYQ9mdkm5Ta5BlhE', component: WebAuthWWWStyaki }
 ];
 
 const router = createRouter({
