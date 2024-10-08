@@ -7,7 +7,7 @@ git ci -m "XX更新MM/DD"
 git push origin head
 ```
 ### 2.rloginを起動
-styakiでエントリーしたいがうまくいかないのでroot xserverのエントリーを使う(要修正)
+styakiでエントリー
 ubuntuのアップデートは自動化(5:00更新)してあるが念のため手動の方法をメモしておく
 ```
 $ sudo apt update -y && sudo apt upgrade -y
@@ -20,8 +20,6 @@ Pending kernel upgradeが表示されたとき
 
 ここから通常フロー
 ```
-# cd /home/
-# su styaki
 $ exec $SHELL -l
 $ cd styaki/blog/
 $ git pull

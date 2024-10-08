@@ -51,7 +51,7 @@ watch(
 <style scoped>
 .default-layout {
   width: 100vw;
-  height: 100svh;
+  height: 100dvh;
   display: flex;
   flex-direction: column;
 }
