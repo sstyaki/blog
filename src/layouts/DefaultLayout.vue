@@ -51,7 +51,7 @@ watch(
 <style scoped>
 .default-layout {
   width: 100vw;
-  height: 100vh;
+  height: 100svh;
   display: flex;
   flex-direction: column;
 }
@@ -62,7 +62,7 @@ watch(
   justify-content: space-between;
   align-items: center;
   font-size: 1.5em;
-  padding-left: 35px;
+  padding-left: 20px;
   min-height: 95px;
   background-image: url("../assets/layout-headerline.png");
   background-size: cover;
@@ -101,12 +101,5 @@ watch(
   flex-grow: 1;
   margin: 20px;
   overflow-y: auto;
-}
-
-::-webkit-full-page-media, :future, :root default-layout {
-  width: 100vw;
-  height: 100dvh;
-  display: flex;
-  flex-direction: column;
 }
 </style>
