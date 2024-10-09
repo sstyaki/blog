@@ -17,7 +17,7 @@
   color: #a24747;
   width: 100vw;
   height: 100vh;
-  background-image: url("../assets/situgaiki1.gif");
+  background-image: url("../assets/situgaiki.gif");
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
