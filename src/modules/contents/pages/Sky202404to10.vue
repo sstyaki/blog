@@ -6,6 +6,13 @@ import {ImageInfo} from "../constants/imageInfo";
 const imageInfos = [
   new ImageInfo({
     title: "",
+    filename: "asagiiro.png",
+    date: "14",
+    month: "10",
+    descriptions: [],
+  }),
+  new ImageInfo({
+    title: "",
     filename: "myu3.png",
     date: "08",
     month: "10",
