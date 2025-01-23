@@ -10,6 +10,7 @@ import DefaultLayout from "../../../layouts/DefaultLayout.vue";
         title="マイクラをしている"
         year-month-day="2024/03/16"
         prev-page="/weblogs/2024-3-16"
+        next-page="/weblogs/2025-1-24"
     >
       <div>こんばんは。</div>
       <div>長らく作ったっきり放置していたこのブログを更新しています。今。</div>

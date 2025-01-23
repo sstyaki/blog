@@ -5,6 +5,7 @@ import Guide from "./pages/Guide.vue";
 import Weblogs from "./pages/Weblogs.vue";
 import Weblog20240316 from "./modules/weblogs/pages/Weblog20240316.vue";
 import Weblog20241008 from "./modules/weblogs/pages/Weblog20241008.vue";
+import Weblog20250125 from "./modules/weblogs/pages/Weblog20250125.vue";
 
 import Contents from "./pages/Contents.vue";
 import Practice202401 from "./modules/contents/pages/Practice202401.vue";
@@ -16,6 +17,8 @@ import Sky202403 from "./modules/contents/pages/Sky202403.vue";
 import Sky202404to10 from "./modules/contents/pages/Sky202404to10.vue";
 import Minecraft from "./modules/contents/pages/Minecraft.vue";
 
+import Rules from "./pages/Rules.vue";
+
 const routes = [
   { path: '/', name: 'Home', component: Home },
   { path: '/guide', name: 'Guide', component: Guide },
@@ -23,6 +26,7 @@ const routes = [
   { path: '/weblogs', name: 'Weblogs', component: Weblogs },
   { path: '/weblogs/2024-3-16', name: 'Weblog20240316', component: Weblog20240316 },
   { path: '/weblogs/2024-10-08', name: 'Weblog20241008', component: Weblog20241008 },
+  { path: '/weblogs/2025-1-24', name: 'Weblog20250125', component: Weblog20250125 },
 
   { path: '/contents', name: 'Contents', component: Contents },
   { path: '/contents/practice/2024-1', name: 'Practice202401', component: Practice202401 },
@@ -33,6 +37,8 @@ const routes = [
   { path: '/contents/sky/2024-3', name: 'Sky202403', component: Sky202403 },
   { path: '/contents/sky/2024-4to10', name: 'Sky202404to10', component: Sky202404to10 },
   { path: '/contents/minecraft', name: 'minecraft', component: Minecraft },
+
+  { path: '/rules', name: 'rules', component: Rules },
 ];
 
 const router = createRouter({
