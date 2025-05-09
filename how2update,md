@@ -21,7 +21,7 @@ Pending kernel upgradeが表示されたとき
 ここから通常フロー
 ```
 $ exec $SHELL -l
-$ cd styaki/blog/
+$ cd blog/
 $ git pull
 $ pm2 restart styaki-blog
 ```
