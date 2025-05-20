@@ -8,10 +8,10 @@ const isMobileView = ref(true);
 <template>
   <DefaultLayout @change-device-of-window="(isMovieViewValue: boolean) => isMobileView = isMovieViewValue">
     <template v-slot:header>案内板</template>
-    <h2>此処は・・・？</h2>
-    <div>いらっしゃいませ。気分屋です。</div>
+    <h2>此処は</h2>
+    <div>気分屋です。</div>
     <div>売れる気分だけ売っています。</div>
-    <h2>貴方は・・・？</h2>
+    <h2>お前は</h2>
     <div class="about-me">
       <img src="../assets/okojo.png" alt="オコジョの絵" class="my-icon-image" :class="{'my-icon-image-mobile': isMobileView}"/>
       <div class="about-me-link-table">
@@ -38,15 +38,15 @@ const isMobileView = ref(true);
         </div>
       </div>
     </div>
-    <div>ちゃきと申します。</div>
-    <div>おこじょではないです。おこじょが好きです。</div>
-    <h2>メニューについて</h2>
+    <div>ちゃきです。</div>
+    <div>なんか生きてます。君とおなじ。</div>
+    <h2>メニュー</h2>
     <div class="menu-description">
       <div class="menu-description-row">
         <div class="menu-description-row-title">戻る</div><div>：</div><div>トップページに戻ります。</div>
       </div>
       <div class="menu-description-row">
-        <div class="menu-description-row-title">案内板</div><div>：</div><div>ここのことです。おこじょの横のやつは各種SNSのリンクになっています。</div>
+        <div class="menu-description-row-title">案内板</div><div>：</div><div>ここのことです。アイコンの横のやつは各種SNSのリンクになっています。</div>
       </div>
       <div class="menu-description-row">
         <div class="menu-description-row-title">茶飯事</div><div>：</div><div>何かの進捗だったり、どうでもいいことだったりが書いてあります。</div>
