@@ -6,6 +6,7 @@ import Weblogs from "./pages/Weblogs.vue";
 import Weblog20240316 from "./modules/weblogs/pages/Weblog20240316.vue";
 import Weblog20241008 from "./modules/weblogs/pages/Weblog20241008.vue";
 import Weblog20250125 from "./modules/weblogs/pages/Weblog20250125.vue";
+import Weblog20250520 from "./modules/weblogs/pages/Weblog20250520.vue";
 
 import Contents from "./pages/Contents.vue";
 import Practice202401 from "./modules/contents/pages/Practice202401.vue";
@@ -27,6 +28,7 @@ const routes = [
   { path: '/weblogs/2024-3-16', name: 'Weblog20240316', component: Weblog20240316 },
   { path: '/weblogs/2024-10-08', name: 'Weblog20241008', component: Weblog20241008 },
   { path: '/weblogs/2025-1-24', name: 'Weblog20250125', component: Weblog20250125 },
+  { path: '/weblogs/2025-5-20', name: 'Weblog20250520', component: Weblog20250520 },
 
   { path: '/contents', name: 'Contents', component: Contents },
   { path: '/contents/practice/2024-1', name: 'Practice202401', component: Practice202401 },
