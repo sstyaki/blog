@@ -7,22 +7,22 @@ const imageInfos = [
   new ImageInfo({
     title: "",
     filename: "summerbell.png",
-    date: "28",
-    month: "6",
+    date: "23",
+    month: "06",
     descriptions: [],
   }),
   new ImageInfo({
     title: "",
     filename: "ale2.png",
-    date: "14",
-    month: "6",
+    date: "23",
+    month: "06",
     descriptions: [],
   }),
   new ImageInfo({
     title: "",
     filename: "wind.png",
-    date: "10",
-    month: "5",
+    date: "23",
+    month: "05",
     descriptions: [],
   }),
 ];
@@ -34,9 +34,8 @@ const imageInfos = [
     <ContentPage
         :invalid-description-toggle="true"
         :image-infos="imageInfos"
-        year-month="2024/04"
-        prev-page="/contents/sky/2024-3"
-        next-page="/contents/sky/2025-5to6"
+        year-month="2025/05"
+        prev-page="/contents/sky/2024-4to10"
     />
   </DefaultLayout>
 </template>
