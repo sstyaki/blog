@@ -27,7 +27,7 @@ const imageInfos = [
   }),
   new ImageInfo({
     title: "",
-    filename: "saki2.png",
+    filename: "wind.png",
     date: "23",
     month: "01",
     descriptions: [],
