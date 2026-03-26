@@ -16,7 +16,8 @@ import Sky202401 from "./modules/contents/pages/Sky202401.vue";
 import Sky202402 from "./modules/contents/pages/Sky202402.vue";
 import Sky202403 from "./modules/contents/pages/Sky202403.vue";
 import Sky202404to10 from "./modules/contents/pages/Sky202404to10.vue";
-import Sky202505to06 from "./modules/contents/pages/Sky202505to06.vue";
+import Sky202505to07 from "./modules/contents/pages/Sky202505to07.vue";
+import Sky202601to03 from "./modules/contents/pages/Sky202601to03.vue";
 import Minecraft from "./modules/contents/pages/Minecraft.vue";
 
 import Rules from "./pages/Rules.vue";
@@ -39,7 +40,8 @@ const routes = [
   { path: '/contents/sky/2024-2', name: 'Sky202402', component: Sky202402 },
   { path: '/contents/sky/2024-3', name: 'Sky202403', component: Sky202403 },
   { path: '/contents/sky/2024-4to10', name: 'Sky202404to10', component: Sky202404to10 },
-  { path: '/contents/sky/2025-5to6', name: 'Sky202505to06', component: Sky202505to06 },
+  { path: '/contents/sky/2025-5to7', name: 'Sky202505to07', component: Sky202505to07 },
+  { path: '/contents/sky/2026-1to3', name: 'Sky202601to03', component: Sky202601to03 },
   { path: '/contents/minecraft', name: 'minecraft', component: Minecraft },
 
   { path: '/rules', name: 'rules', component: Rules },

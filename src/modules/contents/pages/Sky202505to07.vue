@@ -6,6 +6,13 @@ import {ImageInfo} from "../constants/imageInfo";
 const imageInfos = [
   new ImageInfo({
     title: "",
+    filename: "saki2.png",
+    date: "10",
+    month: "07",
+    descriptions: [],
+  }),
+  new ImageInfo({
+    title: "",
     filename: "summerbell.png",
     date: "23",
     month: "06",
@@ -20,9 +27,9 @@ const imageInfos = [
   }),
   new ImageInfo({
     title: "",
-    filename: "wind.png",
+    filename: "saki2.png",
     date: "23",
-    month: "05",
+    month: "01",
     descriptions: [],
   }),
 ];
@@ -36,6 +43,7 @@ const imageInfos = [
         :image-infos="imageInfos"
         year-month="2025/05"
         prev-page="/contents/sky/2024-4to10"
+        next-page="/contents/sky/2026-1to3"
     />
   </DefaultLayout>
 </template>

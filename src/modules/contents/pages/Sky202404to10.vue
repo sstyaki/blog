@@ -99,7 +99,7 @@ const imageInfos = [
       :image-infos="imageInfos"
       year-month="2024/04"
       prev-page="/contents/sky/2024-3"
-      next-page="/contents/sky/2025-5to6"
+      next-page="/contents/sky/2025-5to7"
     />
   </DefaultLayout>
 </template>

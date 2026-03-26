@@ -16,6 +16,7 @@ import DefaultLayout from "../layouts/DefaultLayout.vue";
         <div>2025/01/24 :</div>
         <router-link to="/weblogs/2025-1-24" class="log-link">日記</router-link>
       </div>
+      <!--
       <div class="weblog-item">
         <div>2024/10/08 :</div>
         <router-link to="/weblogs/2024-10-08" class="log-link">マイクラをしている</router-link>
@@ -24,6 +25,7 @@ import DefaultLayout from "../layouts/DefaultLayout.vue";
         <div>2024/03/16 :</div>
         <router-link to="/weblogs/2024-3-16" class="log-link">開設日</router-link>
       </div>
+      -->
     </div>
   </DefaultLayout>
 </template>
