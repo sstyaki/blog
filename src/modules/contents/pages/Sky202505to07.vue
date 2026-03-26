@@ -21,15 +21,15 @@ const imageInfos = [
   new ImageInfo({
     title: "",
     filename: "ale2.png",
-    date: "23",
+    date: "16",
     month: "06",
     descriptions: [],
   }),
   new ImageInfo({
     title: "",
     filename: "wind.png",
-    date: "23",
-    month: "01",
+    date: "12",
+    month: "05",
     descriptions: [],
   }),
 ];
