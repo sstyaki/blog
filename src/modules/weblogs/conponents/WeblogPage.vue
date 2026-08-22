@@ -1,15 +1,15 @@
 <script setup lang="ts">
 interface Props {
-  title: string;
-  yearMonthDay: string;
-  nextPage?: string | undefined;
-  prevPage?: string | undefined;
+  title: string
+  yearMonthDay: string
+  nextPage?: string | undefined
+  prevPage?: string | undefined
 }
-withDefaults(defineProps<Props>(), {});
+withDefaults(defineProps<Props>(), {})
 </script>
 
 <template>
-  <h2>{{yearMonthDay + " ー " +　title}}</h2>
+  <h2>{{ yearMonthDay + ' ー ' + title }}</h2>
   <div class="main">
     <slot />
     <div class="pagination-menu">

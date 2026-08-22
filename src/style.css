@@ -14,10 +14,12 @@ a {
   font-weight: 500;
   color: #d3cbc0;
 }
-a:link, a:visited {
+a:link,
+a:visited {
   color: #d3cbc0;
 }
-a:hover, a:active {
+a:hover,
+a:active {
   color: #a24747;
 }
 

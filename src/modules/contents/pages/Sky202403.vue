@@ -1,46 +1,46 @@
 <script setup lang="ts">
-import DefaultLayout from "../../../layouts/DefaultLayout.vue";
-import ContentPage from "../components/ContentPage.vue";
-import {ImageInfo} from "../constants/imageInfo";
+import DefaultLayout from '../../../layouts/DefaultLayout.vue'
+import ContentPage from '../components/ContentPage.vue'
+import { ImageInfo } from '../constants/imageInfo'
 
 const imageInfos = [
   new ImageInfo({
-    title: "",
-    filename: "syao1.png",
-    date: "28",
+    title: '',
+    filename: 'syao1.png',
+    date: '28',
     descriptions: [],
   }),
   new ImageInfo({
-    title: "",
-    filename: "mayonaka.png",
-    date: "20",
+    title: '',
+    filename: 'mayonaka.png',
+    date: '20',
     descriptions: [],
   }),
   new ImageInfo({
-    title: "",
-    filename: "styaki3.png",
-    date: "16",
+    title: '',
+    filename: 'styaki3.png',
+    date: '16',
     descriptions: [],
   }),
   new ImageInfo({
-    title: "",
-    filename: "tudoi1.png",
-    date: "03",
+    title: '',
+    filename: 'tudoi1.png',
+    date: '03',
     descriptions: [],
   }),
   new ImageInfo({
-    title: "",
-    filename: "nachi1.png",
-    date: "02",
+    title: '',
+    filename: 'nachi1.png',
+    date: '02',
     descriptions: [],
   }),
   new ImageInfo({
-    title: "",
-    filename: "myu2.png",
-    date: "01",
+    title: '',
+    filename: 'myu2.png',
+    date: '01',
     descriptions: [],
   }),
-];
+]
 </script>
 
 <template>

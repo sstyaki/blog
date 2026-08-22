@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import DefaultLayout from "../layouts/DefaultLayout.vue";
+import DefaultLayout from '../layouts/DefaultLayout.vue'
 </script>
 
 <template>
@@ -8,7 +8,11 @@ import DefaultLayout from "../layouts/DefaultLayout.vue";
     <h2>諸々</h2>
     <router-link to="/contents/game/1">げえむ</router-link>
     <div>2024/01/25</div>
-    <img src="../modules/contents/assets/brokenbottle1.png" alt="割れたボトル" class="image">
+    <img
+      src="../modules/contents/assets/brokenbottle1.png"
+      alt="割れたボトル"
+      class="image"
+    />
   </DefaultLayout>
 </template>
 

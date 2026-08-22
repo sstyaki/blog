@@ -1,6 +1,5 @@
 <script setup lang="ts">
-
-import DefaultLayout from "../layouts/DefaultLayout.vue";
+import DefaultLayout from '../layouts/DefaultLayout.vue'
 </script>
 
 <template>
@@ -33,7 +32,7 @@ import DefaultLayout from "../layouts/DefaultLayout.vue";
 <style scoped>
 .weblogs {
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
   gap: 2em;
 }
 

@@ -1,27 +1,27 @@
 <script setup lang="ts">
-import {ImageInfo} from "../constants/imageInfo";
-import Toggle from "../../../components/Toggle.vue";
-import {ref} from "vue";
+import { ImageInfo } from '../constants/imageInfo'
+import Toggle from '../../../components/Toggle.vue'
+import { ref } from 'vue'
 
 interface Props {
-  invalidDescriptionToggle?: boolean | undefined;
-  invalidDate?: boolean | undefined;
-  imageInfos: ImageInfo[];
-  yearMonth: string;
-  nextPage?: string | undefined;
-  prevPage?: string | undefined;
+  invalidDescriptionToggle?: boolean | undefined
+  invalidDate?: boolean | undefined
+  imageInfos: ImageInfo[]
+  yearMonth: string
+  nextPage?: string | undefined
+  prevPage?: string | undefined
 }
-const props = withDefaults(defineProps<Props>(), {});
+const props = withDefaults(defineProps<Props>(), {})
 const dynamicImageURL = (fileName: string) => {
-  return new URL(`../assets/${fileName}`, import.meta.url).href;
-};
+  return new URL(`../assets/${fileName}`, import.meta.url).href
+}
 
-const showDescription = ref(!props.invalidDescriptionToggle);
+const showDescription = ref(!props.invalidDescriptionToggle)
 const handleToggleOn = () => {
-  showDescription.value = true;
+  showDescription.value = true
 }
 const handleToggleOff = () => {
-  showDescription.value = false;
+  showDescription.value = false
 }
 </script>
 
@@ -30,16 +30,32 @@ const handleToggleOff = () => {
     v-if="!invalidDescriptionToggle"
     @toggle-on="handleToggleOn()"
     @toggle-off="handleToggleOff()"
-  >… 説明 {{showDescription ? "ON" : "OFF"}}</Toggle>
+    >… 説明 {{ showDescription ? 'ON' : 'OFF' }}</Toggle
+  >
 
-  <div v-for="(imageInfo) in imageInfos" class="image-info">
+  <div v-for="imageInfo in imageInfos" class="image-info">
     <div v-if="!invalidDate">
-      <div v-if="imageInfo.value.month == null">{{yearMonth}}/{{imageInfo.value.date}}</div>
-      <div v-else>{{yearMonth.slice(0, 4)}}/{{imageInfo.value.month}}/{{imageInfo.value.date}}</div>
+      <div v-if="imageInfo.value.month == null">
+        {{ yearMonth }}/{{ imageInfo.value.date }}
+      </div>
+      <div v-else>
+        {{ yearMonth.slice(0, 4) }}/{{ imageInfo.value.month }}/{{
+          imageInfo.value.date
+        }}
+      </div>
     </div>
     <div class="image-name">{{ imageInfo.value.title }}</div>
-    <img :src="dynamicImageURL(imageInfo.value.filename)" :alt="imageInfo.value.title + 'の画像'" class="image">
-    <div v-if="showDescription" v-for="(description) in imageInfo.value.descriptions">{{description}}</div>
+    <img
+      :src="dynamicImageURL(imageInfo.value.filename)"
+      :alt="imageInfo.value.title + 'の画像'"
+      class="image"
+    />
+    <div
+      v-if="showDescription"
+      v-for="description in imageInfo.value.descriptions"
+    >
+      {{ description }}
+    </div>
   </div>
   <div class="pagination-menu">
     <div v-if="prevPage"><router-link :to="prevPage">前</router-link></div>

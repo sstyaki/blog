@@ -1,28 +1,28 @@
 <script setup lang="ts">
-import DefaultLayout from "../../../layouts/DefaultLayout.vue";
-import ContentPage from "../components/ContentPage.vue";
-import {ImageInfo} from "../constants/imageInfo";
+import DefaultLayout from '../../../layouts/DefaultLayout.vue'
+import ContentPage from '../components/ContentPage.vue'
+import { ImageInfo } from '../constants/imageInfo'
 
 const imageInfos = [
   new ImageInfo({
-    title: "",
-    filename: "u1.png",
-    date: "29",
+    title: '',
+    filename: 'u1.png',
+    date: '29',
     descriptions: [],
   }),
   new ImageInfo({
-    title: "",
-    filename: "myu1.png",
-    date: "28",
+    title: '',
+    filename: 'myu1.png',
+    date: '28',
     descriptions: [],
   }),
   new ImageInfo({
-    title: "",
-    filename: "styaki1.png",
-    date: "26",
+    title: '',
+    filename: 'styaki1.png',
+    date: '26',
     descriptions: [],
   }),
-];
+]
 </script>
 
 <template>

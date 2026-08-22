@@ -1,70 +1,70 @@
 <script setup lang="ts">
-import DefaultLayout from "../../../layouts/DefaultLayout.vue";
-import ContentPage from "../components/ContentPage.vue";
-import {ImageInfo} from "../constants/imageInfo";
+import DefaultLayout from '../../../layouts/DefaultLayout.vue'
+import ContentPage from '../components/ContentPage.vue'
+import { ImageInfo } from '../constants/imageInfo'
 
 const imageInfos = [
   new ImageInfo({
-    title: "",
-    filename: "key1.gif",
-    date: "29",
+    title: '',
+    filename: 'key1.gif',
+    date: '29',
     descriptions: [],
   }),
   new ImageInfo({
-    title: "",
-    filename: "lapis1.png",
-    date: "28",
+    title: '',
+    filename: 'lapis1.png',
+    date: '28',
     descriptions: [],
   }),
   new ImageInfo({
-    title: "",
-    filename: "noey1.png",
-    date: "26",
+    title: '',
+    filename: 'noey1.png',
+    date: '26',
     descriptions: [],
   }),
   new ImageInfo({
-    title: "",
-    filename: "red1.png",
-    date: "23",
+    title: '',
+    filename: 'red1.png',
+    date: '23',
     descriptions: [],
   }),
   new ImageInfo({
-    title: "",
-    filename: "cat1.png",
-    date: "22",
+    title: '',
+    filename: 'cat1.png',
+    date: '22',
     descriptions: [],
   }),
   new ImageInfo({
-    title: "",
-    filename: "styaki2.png",
-    date: "21",
+    title: '',
+    filename: 'styaki2.png',
+    date: '21',
     descriptions: [],
   }),
   new ImageInfo({
-    title: "",
-    filename: "hakuo1.png",
-    date: "20",
+    title: '',
+    filename: 'hakuo1.png',
+    date: '20',
     descriptions: [],
   }),
   new ImageInfo({
-    title: "",
-    filename: "alba.png",
-    date: "14",
+    title: '',
+    filename: 'alba.png',
+    date: '14',
     descriptions: [],
   }),
   new ImageInfo({
-    title: "",
-    filename: "saki1.png",
-    date: "05",
+    title: '',
+    filename: 'saki1.png',
+    date: '05',
     descriptions: [],
   }),
   new ImageInfo({
-    title: "",
-    filename: "yamu1.png",
-    date: "02",
+    title: '',
+    filename: 'yamu1.png',
+    date: '02',
     descriptions: [],
   }),
-];
+]
 </script>
 
 <template>
