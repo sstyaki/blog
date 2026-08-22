@@ -5,7 +5,7 @@
   "type": "module",
   "log-date-format": "YYYY-MM-DD HH:mm:ss Z",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --host 127.0.0.1 --port 5173 --strictPort",
     "build": "vue-tsc && vite build",
     "preview": "vite preview"
   },
