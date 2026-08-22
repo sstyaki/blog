@@ -33,7 +33,11 @@ const handleToggleOff = () => {
     >… 説明 {{ showDescription ? 'ON' : 'OFF' }}</Toggle
   >
 
-  <div v-for="imageInfo in imageInfos" class="image-info">
+  <div
+    v-for="imageInfo in imageInfos"
+    :key="imageInfo.value.filename"
+    class="image-info"
+  >
     <div v-if="!invalidDate">
       <div v-if="imageInfo.value.month == null">
         {{ yearMonth }}/{{ imageInfo.value.date }}
@@ -44,19 +48,25 @@ const handleToggleOff = () => {
         }}
       </div>
     </div>
+
     <div class="image-name">{{ imageInfo.value.title }}</div>
+
     <img
       :src="dynamicImageURL(imageInfo.value.filename)"
       :alt="imageInfo.value.title + 'の画像'"
       class="image"
     />
-    <div
-      v-if="showDescription"
-      v-for="description in imageInfo.value.descriptions"
-    >
-      {{ description }}
-    </div>
+
+    <template v-if="showDescription">
+      <div
+        v-for="(description, index) in imageInfo.value.descriptions"
+        :key="index"
+      >
+        {{ description }}
+      </div>
+    </template>
   </div>
+
   <div class="pagination-menu">
     <div v-if="prevPage"><router-link :to="prevPage">前</router-link></div>
     <div v-else>　</div>
