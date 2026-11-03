@@ -9,7 +9,6 @@ import DefaultLayout from '../../../layouts/DefaultLayout.vue'
     <WeblogPage
       title="日記"
       year-month-day="2025/01/24"
-      prev-page="/weblogs/2024-10-08"
       next-page="/weblogs/2025-5-20"
     >
       <div class="novel">

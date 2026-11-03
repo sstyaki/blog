@@ -7,6 +7,7 @@ import Weblog20240316 from './modules/weblogs/pages/Weblog20240316.vue'
 import Weblog20241008 from './modules/weblogs/pages/Weblog20241008.vue'
 import Weblog20250125 from './modules/weblogs/pages/Weblog20250125.vue'
 import Weblog20250520 from './modules/weblogs/pages/Weblog20250520.vue'
+import Weblog20261102 from "./modules/weblogs/pages/Weblog20261102.vue"
 
 import Contents from './pages/Contents.vue'
 import Practice202401 from './modules/contents/pages/Practice202401.vue'
@@ -46,6 +47,11 @@ const routes = [
     path: '/weblogs/2025-5-20',
     name: 'Weblog20250520',
     component: Weblog20250520,
+  },
+  {
+    path: '/weblogs/2026-11-02',
+    name: 'Weblog20261102',
+    component: Weblog20261102,
   },
 
   { path: '/contents', name: 'Contents', component: Contents },
